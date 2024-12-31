@@ -74,8 +74,13 @@
   <div class="win98-window">
     <div class="window-title">Contact</div>
     <div class="window-content">
-      <p>DM @WhiskeyTuesday on twitter if you're interested in coming or have any questions or want to help other people figure out their plans or want to organize something or want me to put you on the featured guest list.</p>
-      <p>Or don't, I'm not your dad.</p>
+      <p>
+        DM @WhiskeyTuesday on twitter if you're interested in coming
+        or have any questions or want to help other people figure
+        out their plans or want to organize something or want me
+        to put you on the featured guest list. Or don't, I'm not
+        your dad.
+      </p>
     </div>
   </div>
 
