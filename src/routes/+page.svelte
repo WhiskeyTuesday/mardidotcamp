@@ -62,7 +62,7 @@
   </div>
 
   <div class="win98-window">
-    <div class="window-title">Featured Guests (just me so far)</div>
+    <div class="window-title">Featured Guests</div>
     <div class="window-content">
       <ul>
         <li>@WhiskeyTuesday</li>
