@@ -44,7 +44,7 @@
       <!-- <li><a href="#">Bar</a></li> -->
     </ul>
     <div class="system-tray">
-      <span>{currentTime}</span>
+      <span>{currentTime} in New Orleans</span>
     </div>
   </nav>
 </header>
