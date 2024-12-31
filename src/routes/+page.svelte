@@ -93,17 +93,22 @@
 </div>
 
 <style>
-  /* I don't know where I overrode the default link colors but I'm putting them back */
+  /* reinstate default HTML anchor styles */
   a {
     color: #00f;
+    text-decoration: underline;
   }
 
   a:hover {
-    color: #f00;
+    text-decoration: none;
   }
 
   a:visited {
-    color: #800080;
+    color: #551a8b;
+  }
+
+  a:visited:hover {
+    color: #551a8b;
   }
 
   .content-wrapper {

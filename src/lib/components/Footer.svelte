@@ -18,4 +18,22 @@
     font-size: 0.8em;
     color: #000;
   }
+
+  /* reinstate default HTML anchor styles */
+  a {
+    color: #00f;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #551a8b;
+  }
+
+  a:visited:hover {
+    color: #551a8b;
+  }
 </style>
