@@ -37,15 +37,15 @@
     </div>
   </div>
   <nav class="win98-menu">
-    <!-- <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#schedule">Schedule</a></li>
-      <li><a href="#register">Register</a></li>
-    </ul> -->
+    <ul>
+      <li><a href="https://www.mardigrasneworleans.com/parades/">Official schedule</a></li>
+      <!-- <li><a href="#">j</a></li> -->
+      <!-- <li><a href="#">Bar</a></li> -->
+    </ul>
+    <div class="system-tray">
+      <span>{currentTime}</span>
+    </div>
   </nav>
-  <div class="system-tray">
-    <span>{currentTime}</span>
-  </div>
 </header>
 
 <style>
@@ -53,6 +53,32 @@
     background-color: #000080;
     color: #fff;
     padding: 2px;
+  }
+
+  .win98-menu {
+    display: flex;
+    background-color: #c0c0c0;
+    justify-content: space-between;
+  }
+
+ .win98-menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+  }
+
+  .win98-menu li {
+    padding: 3px 6px;
+  }
+
+  .win98-menu a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .win98-menu a:hover {
+    text-decoration: underline;
   }
 
   .title-bar {
