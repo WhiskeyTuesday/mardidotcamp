@@ -2,7 +2,7 @@
   import Content from '$lib/components/Content.svelte';
   import { onMount } from 'svelte';
 
-  let marqueeText = "Welcome to Mardi.camp - The ultimate (only) ingroup weirdo twitter gathering at Mardi Gras 2025 (probably)";
+  let marqueeText = "Welcome to Mardi.camp - The ultimate (only) ingroup weirdo twitter gathering at Mardi Gras 2025 (probably)    Laisez les bon temps rouler? I hardly know her"
   let stars = [];
 
   onMount(() => {
