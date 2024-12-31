@@ -4,7 +4,7 @@
 
   import '../app.css';
 
-	let { children } = $props();
+  let { children } = $props();
 </script>
 
 <main class="win98-container">
