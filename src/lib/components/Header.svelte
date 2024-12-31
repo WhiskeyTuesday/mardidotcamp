@@ -3,11 +3,9 @@
 
   let currentTime = new Date().toLocaleTimeString();
 
-  $: {
-    setInterval(() => {
-      currentTime = new Date().toLocaleTimeString();
-    }, 1000);
-  }
+  setInterval(() => {
+    currentTime = new Date().toLocaleTimeString();
+  }, 1000);
 
   const handleMinimize = () => {
     alert("something funny should happen when you click that, don't you think?");
