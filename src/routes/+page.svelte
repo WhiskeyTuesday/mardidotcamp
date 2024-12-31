@@ -34,6 +34,34 @@
   </div>
 
   <div class="win98-window">
+    <div class="window-title">Vibes</div>
+    <div class="window-content">
+      <p>Mardi Gras doesn't have to be about taking drugs, drinking too much, and taking your clothes off.</p>
+      <p>That said, don't let me stop you.</p>
+      <p>My vibe is much more about hanging out with cool people, eating Beignets, and watching the parades go by. A much more Frenchman Street vibe than Bourbon Street.</p>
+      <p>But I'm not your dad so <a href="https://www.youtube.com/watch?v=PsQzRZyWidk">do what you wanna</a></p>
+      <br/>
+    </div>
+  </div>
+
+  <div class="win98-window">
+    <div class="window-title">Logistics</div>
+    <div class="window-content">
+      <p>I have put no thought into this, I have a hotel reservation I made months ago but you probably want to get together and figure out a big airbnb or make your own reservations sooner rather than later. Check back here for more information if anyone takes the initiative.</p>
+    </div>
+  </div>
+
+  <div class="win98-window">
+    <div class="window-title">Activities</div>
+    <div class="window-content">
+      <p>March 2nd: Something?</p>
+      <p>March 3rd: Lundi Gras</p>
+      <p>March 4th: Mardi Gras</p>
+      <p>March 5th: Ash Wednesday, seek absolution</p>
+    </div>
+  </div>
+
+  <div class="win98-window">
     <div class="window-title">Featured Guests (just me so far)</div>
     <div class="window-content">
       <ul>
