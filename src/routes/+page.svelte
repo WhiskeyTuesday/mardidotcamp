@@ -2,7 +2,7 @@
   import Content from '$lib/components/Content.svelte';
   import { onMount } from 'svelte';
 
-  let marqueeText = "Welcome to Mardi.camp - The ultimate tech Twitter gathering at Mardi Gras 2025!";
+  let marqueeText = "Welcome to Mardi.camp - The ultimate (only) ingroup weirdo twitter gathering at Mardi Gras 2025 (probably)";
   let stars = [];
 
   onMount(() => {
@@ -38,6 +38,7 @@
     <div class="window-content">
       <ul>
         <li>@WhiskeyTuesday</li>
+        <li>@dschorno</li>
       </ul>
     </div>
   </div>
