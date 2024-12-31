@@ -1,10 +1,11 @@
 <script>
   import { X, Square, Minus } from "lucide-svelte";
 
-  let currentTime = new Date().toLocaleTimeString();
+  // always show time in New Orleans time
+  let currentTime = new Date().toLocaleTimeString("en-US", { timeZone: "America/Chicago" });
 
   setInterval(() => {
-    currentTime = new Date().toLocaleTimeString();
+    currentTime = new Date().toLocaleTimeString("en-US", { timeZone: "America/Chicago" });
   }, 1000);
 
   const handleMinimize = () => {
