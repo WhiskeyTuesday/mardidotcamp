@@ -88,6 +88,19 @@
 </div>
 
 <style>
+  /* I don't know where I overrode the default link colors but I'm putting them back */
+  a {
+    color: #00f;
+  }
+
+  a:hover {
+    color: #f00;
+  }
+
+  a:visited {
+    color: #800080;
+  }
+
   .content-wrapper {
     padding: 10px;
     background-color: #008080;
