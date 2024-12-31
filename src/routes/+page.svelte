@@ -38,7 +38,7 @@
     <div class="window-content">
       <p>Mardi Gras doesn't have to be about taking drugs, drinking too much, and taking your clothes off.</p>
       <p>That said, don't let me stop you.</p>
-      <p>My vibe is much more about hanging out with cool people, eating Beignets, and watching the parades go by. More Frenchman Street than Bourbon Street, iykyk.</p>
+      <p>My vibe is much more about hanging out with cool people, eating beignets, and watching the parades go by. More Frenchman Street than Bourbon Street, iykyk.</p>
       <p>But I'm not your dad so <a href="https://www.youtube.com/watch?v=PsQzRZyWidk">do what you wanna.</a></p>
       <br/>
     </div>

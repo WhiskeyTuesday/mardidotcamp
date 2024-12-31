@@ -1,4 +1,6 @@
 <script>
+  import { X, Square, Minus } from "lucide-svelte";
+
   let currentTime = new Date().toLocaleTimeString();
 
   $: {
@@ -6,15 +8,34 @@
       currentTime = new Date().toLocaleTimeString();
     }, 1000);
   }
+
+  const handleMinimize = () => {
+    alert("something funny should happen when you click that, don't you think?");
+  };
+
+  const handleMaximize = () => {
+    alert("something funny should happen when you click that too");
+  };
+
+  const handleClose = () => {
+    // haha gotem
+    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  };
 </script>
 
 <header class="win98-header">
   <div class="title-bar">
     <div class="title-bar-text">Mardi.camp - Tech Twitter Mardi Gras 2025</div>
     <div class="title-bar-controls">
-      <button aria-label="Minimize"></button>
-      <button aria-label="Maximize"></button>
-      <button aria-label="Close"></button>
+      <button aria-label="Minimize" on:click={handleMinimize}>
+        <Minus size="16" color="#000" />
+      </button>
+      <button aria-label="Maximize" on:click={handleMaximize}>
+        <Square class="mx-auto my-auto" size="12" color="#000" />
+      </button>
+      <button aria-label="Close" on:click={handleClose}>
+        <X size="16" color="#000" />
+      </button>
     </div>
   </div>
   <nav class="win98-menu">
@@ -54,27 +75,6 @@
     border: none;
     background-color: #c0c0c0;
     margin-left: 2px;
-  }
-
-  .win98-menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    background-color: #c0c0c0;
-  }
-
-  .win98-menu li {
-    padding: 3px 6px;
-  }
-
-  .win98-menu a {
-    color: #000;
-    text-decoration: none;
-  }
-
-  .win98-menu a:hover {
-    text-decoration: underline;
   }
 
   .system-tray {
