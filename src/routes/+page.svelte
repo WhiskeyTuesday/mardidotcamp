@@ -2,7 +2,10 @@
   import Content from '$lib/components/Content.svelte';
   import { onMount } from 'svelte';
 
-  let marqueeText = "Welcome to Mardi.camp - The ultimate (only) ingroup weirdo twitter gathering at Mardi Gras 2025 (probably). Laisez les bon temps rouler? I hardly know her"
+  let marqueeText = "Welcome to Mardi.camp - The ultimate (only) ingroup weirdo"
+  + " twitter gathering at Mardi Gras 2025 (probably). Laisez les bon temps"
+  + " rouler? I hardly know her";
+
   let stars = [];
 
   onMount(() => {
@@ -36,18 +39,35 @@
   <div class="win98-window">
     <div class="window-title">Vibes</div>
     <div class="window-content">
-      <p>Mardi Gras doesn't have to be about taking drugs, drinking too much, and taking your clothes off.</p>
+      <p>
+        Mardi Gras doesn't have to be about taking drugs,
+        drinking too much, and taking your clothes off.
+      </p>
       <p>That said, don't let me stop you.</p>
-      <p>My vibe is much more about hanging out with cool people, eating beignets, and watching the parades go by. More Frenchman Street than Bourbon Street, iykyk.</p>
-      <p>But I'm not your dad so <a href="https://www.youtube.com/watch?v=PsQzRZyWidk">do what you wanna.</a></p>
-      <br/>
+      <p>
+        My vibe is much more about hanging out with cool people,
+        eating beignets, and watching the parades go by.
+        More Frenchman Street than Bourbon Street, iykyk.
+      </p>
+      <p>
+        But I'm not your dad so
+        <a href="https://www.youtube.com/watch?v=PsQzRZyWidk">
+          do what you wanna.
+        </a>
+      </p>
+      <br/> <!-- yeah yeah don't use br I know -->
     </div>
   </div>
 
   <div class="win98-window">
     <div class="window-title">Logistics</div>
     <div class="window-content">
-      <p>I have put no thought into this, I have a hotel reservation I made months ago but you probably want to get together and figure out a big airbnb or make your own reservations sooner rather than later. Check back here for more information if anyone takes the initiative.</p>
+      <p>
+        I have put no thought into this, I have a hotel reservation I made
+        months ago but you probably want to get together and figure out a big
+        airbnb or make your own reservations sooner rather than later.
+        Check back here for more information if anyone takes the initiative.
+      </p>
     </div>
   </div>
 
@@ -86,7 +106,11 @@
 
   <div class="space-background">
     {#each stars as star}
-      <div class="star" style="left: {star.x}%; top: {star.y}%; width: {star.size}px; height: {star.size}px;"></div>
+      <div
+        class="star"
+        style="left: {star.x}%; top: {star.y}%; width: {star.size}px; height: {star.size}px;"
+      >
+      </div>
     {/each}
     <img src="https://placekitten.com/100/100" alt="Mascot" class="mascot">
   </div>

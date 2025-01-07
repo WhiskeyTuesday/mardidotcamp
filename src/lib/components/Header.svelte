@@ -2,14 +2,20 @@
   import { X, Square, Minus } from "lucide-svelte";
 
   // always show time in New Orleans time
-  let currentTime = new Date().toLocaleTimeString("en-US", { timeZone: "America/Chicago" });
+  let currentTime = new Date().toLocaleTimeString(
+    "en-US",
+    { timeZone: "America/Chicago" },
+  );
 
   setInterval(() => {
-    currentTime = new Date().toLocaleTimeString("en-US", { timeZone: "America/Chicago" });
+    currentTime = new Date().toLocaleTimeString(
+      "en-US",
+      { timeZone: "America/Chicago" },
+    );
   }, 1000);
 
   const handleMinimize = () => {
-    alert("something funny should happen when you click that, don't you think?");
+    alert("something funny should happen when you click this, I think");
   };
 
   const handleMaximize = () => {
@@ -39,7 +45,11 @@
   </div>
   <nav class="win98-menu">
     <ul>
-      <li><a href="https://www.mardigrasneworleans.com/parades/">Official schedule</a></li>
+      <li>
+        <a href="https://www.mardigrasneworleans.com/parades/">
+          Official schedule
+        </a>
+      </li>
       <!-- <li><a href="#">j</a></li> -->
       <!-- <li><a href="#">Bar</a></li> -->
     </ul>
