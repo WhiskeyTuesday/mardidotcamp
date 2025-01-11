@@ -8,15 +8,22 @@
 
   let stars = [];
 
+ const MARDI_GRAS_COLORS = [
+    '#582B7D', // Purple
+    '#0AA14D', // Green
+    '#B8860B'  // Gold
+  ];
+
   onMount(() => {
     const newStars = [];
     for (let i = 0; i < 50; i++) {
       newStars.push({
         x: Math.random() * 100,
         y: Math.random() * 100,
-        baseSize: Math.random() * 3 + 1,
-        twinkleSpeed: 0.5 + Math.random() * 2, // Random speed for each star
-        offset: Math.random() * Math.PI * 2 // Random starting point in animation
+        baseSize: Math.random() * 3 + 5, // Random size for each star
+        twinkleSpeed: 0.5 + Math.random(), // Random speed for each star
+        offset: Math.random() * Math.PI * 2, // Random starting point in animation
+        color: MARDI_GRAS_COLORS[Math.floor(Math.random() * 3)]
       });
     }
     stars = newStars;
@@ -118,6 +125,7 @@
           --twinkle-speed: {star.twinkleSpeed}s;
           --size: {star.baseSize}px;
           --delay: {-star.offset}s;
+          --star-color: {star.color};
         "
       >
       </div>
@@ -196,11 +204,11 @@
 
   @keyframes twinkle {
     0%, 100% {
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: color-mix(in srgb, var(--star-color) 30%, transparent);
       transform: scale(0.8);
     }
     50% {
-      background-color: rgba(255, 255, 255, 1);
+      background-color: var(--star-color);
       transform: scale(1.2);
     }
   }
