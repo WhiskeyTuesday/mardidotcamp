@@ -89,6 +89,7 @@
       <p>March 3rd: Lundi Gras</p>
       <p>March 4th: Mardi Gras</p>
       <p>March 5th: Ash Wednesday, seek absolution</p>
+      <p>March 6th: Leave probably</p>
     </div>
   </div>
 
