@@ -37,7 +37,6 @@
     <div class="window-title">About Mardi.camp</div>
     <div class="window-content">
       <p>Come to mardi gras with your weird twitter friends!</p>
-      <p>Or don't, I'm not your dad.</p>
       <p>Dates: March 2nd to 6th 2025 so far </p>
       <p class="text-sm text-gray-500">
         *everything subject to change
@@ -110,8 +109,7 @@
         DM @WhiskeyTuesday on twitter if you're interested in coming
         or have any questions or want to help other people figure
         out their plans or want to organize something or want me
-        to put you on the featured guest list. Or don't, I'm not
-        your dad.
+        to put you on the featured guest list. Or don't.
       </p>
     </div>
   </div>
@@ -178,7 +176,8 @@
   .window-title {
     background-color: #000080;
     color: #fff;
-    padding: 2px;
+    padding: 0.25rem;
+    padding-left: 0.5rem;
     font-weight: bold;
   }
 

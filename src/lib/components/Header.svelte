@@ -47,7 +47,7 @@
     <ul>
       <li>
         <a href="https://www.mardigrasneworleans.com/parades/">
-          Official schedule
+          Official NOMG schedule
         </a>
       </li>
       <!-- <li><a href="#">j</a></li> -->
@@ -70,6 +70,7 @@
     display: flex;
     background-color: #c0c0c0;
     justify-content: space-between;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
   }
 
  .win98-menu ul {
@@ -77,10 +78,6 @@
     margin: 0;
     display: flex;
     list-style-type: none;
-  }
-
-  .win98-menu li {
-    padding: 3px 6px;
   }
 
   .win98-menu a {
@@ -97,7 +94,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: #000080;
-    padding: 3px 2px 3px 3px;
+    /* css padding direction order is top right bottom left */
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
   }
 
   .title-bar-text {
@@ -115,7 +113,6 @@
   .system-tray {
     background-color: #c0c0c0;
     text-align: right;
-    padding: 2px;
     color: #000;
   }
 </style>
