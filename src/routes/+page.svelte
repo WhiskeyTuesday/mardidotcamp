@@ -1,6 +1,6 @@
 <script>
-  import Content from '$lib/components/Content.svelte';
   import { onMount } from 'svelte';
+  import mascot from '$lib/mascot.png';
 
   let marqueeText = "Welcome to Mardi.camp - The ultimate (only) ingroup weirdo"
   + " twitter gathering at Mardi Gras 2025 (probably). Laisez les bon temps"
@@ -9,13 +9,17 @@
   let stars = [];
 
   onMount(() => {
+    const newStars = [];
     for (let i = 0; i < 50; i++) {
-      stars.push({
+      newStars.push({
         x: Math.random() * 100,
         y: Math.random() * 100,
-        size: Math.random() * 3 + 1
+        baseSize: Math.random() * 3 + 1,
+        twinkleSpeed: 0.5 + Math.random() * 2, // Random speed for each star
+        offset: Math.random() * Math.PI * 2 // Random starting point in animation
       });
     }
+    stars = newStars;
   });
 </script>
 
@@ -104,15 +108,21 @@
     </div>
   </div>
 
-  <div class="space-background">
-    {#each stars as star}
+ <div class="space-background">
+    {#each stars as star, i}
       <div
         class="star"
-        style="left: {star.x}%; top: {star.y}%; width: {star.size}px; height: {star.size}px;"
+        style="
+          left: {star.x}%;
+          top: {star.y}%;
+          --twinkle-speed: {star.twinkleSpeed}s;
+          --size: {star.baseSize}px;
+          --delay: {-star.offset}s;
+        "
       >
       </div>
     {/each}
-    <img src="https://placekitten.com/100/100" alt="Mascot" class="mascot">
+    <img src={mascot} alt="Mascot" class="mascot">
   </div>
 </div>
 
@@ -171,20 +181,35 @@
   .space-background {
     position: relative;
     height: 200px;
-    background-color: #000;
+    background-color: #fde1a2;
     overflow: hidden;
   }
 
   .star {
     position: absolute;
-    background-color: #fff;
     border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+    animation: twinkle var(--twinkle-speed) infinite ease-in-out;
+    animation-delay: var(--delay);
+  }
+
+  @keyframes twinkle {
+    0%, 100% {
+      background-color: rgba(255, 255, 255, 0.3);
+      transform: scale(0.8);
+    }
+    50% {
+      background-color: rgba(255, 255, 255, 1);
+      transform: scale(1.2);
+    }
   }
 
   .mascot {
     position: absolute;
     bottom: 10px;
     right: 10px;
+    max-width: 25%;
     animation: bounce 2s infinite;
   }
 
