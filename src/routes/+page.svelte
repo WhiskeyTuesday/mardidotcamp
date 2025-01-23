@@ -77,6 +77,10 @@
         months ago but you probably want to get together and figure out a big
         airbnb or make your own reservations sooner rather than later.
         Check back here for more information if anyone takes the initiative.
+
+        UPDATE: there's a group chat and an airbnb. Ask me if you want
+        to be added but you will be expected to commit soon. Time is
+        passing. Carpe!
       </p>
     </div>
   </div>
