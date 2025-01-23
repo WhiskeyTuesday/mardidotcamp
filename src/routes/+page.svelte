@@ -37,11 +37,14 @@
     <div class="window-title">About Mardi.camp</div>
     <div class="window-content">
       <p>Come to mardi gras with your weird twitter friends!</p>
-      <p>Dates: March 2nd to 6th 2025 so far </p>
-      <p class="text-sm text-gray-500">
-        *everything subject to change
-        I just came up with this idea as a joke ten minutes ago
-      </p>
+      <div class="mb-4">
+        March 2nd to 6th 2025
+        <div class="text-xs text-gray-500 max-w-sm">
+          *That's when the airbnb is, you can obviously come
+          earlier or stay longer. I'm not in charge of the
+          Louisiana state border or anything (yet).
+        </div>
+      </div>
       <p>Location: New Orleans, Louisiana</p>
     </div>
   </div>
@@ -65,7 +68,6 @@
           do what you wanna.
         </a>
       </p>
-      <br/> <!-- yeah yeah don't use br I know -->
     </div>
   </div>
 
@@ -73,26 +75,37 @@
     <div class="window-title">Logistics</div>
     <div class="window-content">
       <p>
-        I have put no thought into this, I have a hotel reservation I made
-        months ago but you probably want to get together and figure out a big
-        airbnb or make your own reservations sooner rather than later.
-        Check back here for more information if anyone takes the initiative.
-
-        UPDATE: there's a group chat and an airbnb. Ask me if you want
-        to be added but you will be expected to commit soon. Time is
-        passing. Carpe!
+        I have put no thought into this, I have a hotel
+        reservation I made months ago but you probably want
+        to get together and figure out a big airbnb or make
+        your own reservations sooner rather than later.
+        Check back here for more information if anyone takes
+        the initiative.
       </p>
+      <p>
+        UPDATE: there's a group chat and an airbnb. Ask me
+        if you want to be added but you will be expected to
+        commit soon. Time is passing. Carpe!
+      </p>
+      <p>
+        UPDATE TWO ELECTRIC BOOGALOO: There are two beds
+        left (and a couch I think) in the airbnb. Speak now
+        or forever get your own accommodations. The city
+        WILL basically completely sell out. You've been
+        warned.
     </div>
   </div>
 
   <div class="win98-window">
     <div class="window-title">Activities</div>
     <div class="window-content">
-      <p>March 2nd: Something?</p>
-      <p>March 3rd: Lundi Gras</p>
-      <p>March 4th: Mardi Gras</p>
-      <p>March 5th: Ash Wednesday, seek absolution</p>
-      <p>March 6th: Leave probably</p>
+      <ul>
+        <li>March 2nd: Something?</li>
+        <li>March 3rd: Lundi Gras</li>
+        <li>March 4th: Mardi Gras</li>
+        <li>March 5th: Ash Wednesday, seek absolution</li>
+        <li>March 6th: Leave probably</li>
+      </ul>
     </div>
   </div>
 
@@ -110,10 +123,11 @@
     <div class="window-title">Contact</div>
     <div class="window-content">
       <p>
-        DM @WhiskeyTuesday on twitter if you're interested in coming
-        or have any questions or want to help other people figure
-        out their plans or want to organize something or want me
-        to put you on the featured guest list. Or don't.
+        DM @WhiskeyTuesday on twitter if you're interested
+        in coming or have any questions or want to help
+        other people figure out their plans or want to
+        organize something or want me to put you on the
+        featured guest list or whatever.
       </p>
     </div>
   </div>
@@ -175,6 +189,14 @@
     border: 2px solid #fff;
     box-shadow: 2px 2px 0 #000;
     margin-bottom: 10px;
+  }
+
+  .win98-window p {
+    padding-bottom: 1rem;
+  }
+
+  .win98-window p:last-child {
+    padding-bottom: 0;
   }
 
   .window-title {
