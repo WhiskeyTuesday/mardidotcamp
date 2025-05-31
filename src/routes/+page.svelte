@@ -1,18 +1,11 @@
 <script>
   import { onMount } from 'svelte';
   import mascot from '$lib/mascot.png';
+  import fates from '$lib/fates.jpeg';
 
-  let marqueeText = "Welcome to Mardi.camp - The ultimate (only) ingroup weirdo"
-  + " twitter gathering at Mardi Gras 2025 (probably). Laisez les bon temps"
-  + " rouler? I hardly know her";
-
-  let stars = [];
-
- const MARDI_GRAS_COLORS = [
-    '#582B7D', // Purple
-    '#0AA14D', // Green
-    '#B8860B'  // Gold
-  ];
+  const mggreen = '#0AA14D';
+  const mgpurple = '#582B7D';
+  const mggold = '#FFD700';
 
   onMount(() => {
     const newStars = [];
@@ -28,235 +21,82 @@
     }
     stars = newStars;
   });
+
+  let daysUntil = Math.ceil((new Date('2026-02-17') - new Date()) / (1000 * 60 * 60 * 24));
 </script>
 
-<div class="content-wrapper">
-  <marquee class="space-jam-marquee">{marqueeText}</marquee>
-
-  <div class="win98-window">
-    <div class="window-title">About Mardi.camp</div>
-    <div class="window-content">
-      <p>Come to mardi gras with your weird twitter friends!</p>
-      <div class="mb-4">
-        March 2nd to 6th 2025
-        <div class="text-xs text-gray-500 max-w-sm">
-          *That's when the airbnb is, you can obviously come
-          earlier or stay longer. I'm not in charge of the
-          Louisiana state border or anything (yet).
+<main class="flex flex-col items-center justify-center min-h-screen">
+  <div id="container" class="m-4">
+    <div class="text-center text-white">
+      <h1 class="text-4xl font-bold">Mardi.camp</h1>
+      <p class="text-lg mt-2">
+        The ultimate (only) ingroup weirdo twitter gathering at Mardi Gras 2026 (probably).
+      </p>
+      <p class="text-lg mt-2 italic">
+        Laisez les bon temps rouler? I hardly know her
+      </p>
+      <p class="text-lg mt-8">{daysUntil} days until Mardi Gras 2026</p>
+      <p class="text-lg mt-2">Mardi Camp events begin January 31st</p>
+      <p class="text-lg mt-2 underline hover:text-purple-300 transition-colors duration-150">
+        <a href="https://www.mardigrasneworleans.com/parades/">Official Mardi Gras Parade Schedule</a>
+      </p>
+      <button
+        class="mt-4 px-6 py-2 bg-purple-700 text-white rounded border border-yellow-300 hover:bg-purple-800 transition-colors duration-150"
+        on:click={() => document.getElementById('modal').classList.remove('hidden')}
+      >
+        Apply for tickets
+      </button>
+    </div>
+    <div class="flex flex-col items-center m-8">
+      <p class="text-white text-lg text-center">
+        Mardi Camp is an unregistered not-for-profit (in that I expect to lose money every year).
+      </p>
+      <div class="p-0.5 mt-4 bg-gradient-to-br from-yellow-300 via-amber-400 to-yellow-600 rounded-lg">
+        <div class="bg-gray-900 rounded-md p-2 text-white max-w-80 h-auto rounded-lg shadow-lg">
+          <img
+            src={fates}
+            alt="deepfates tweet about unprofitable twitter camps"
+          />
         </div>
       </div>
-      <p>Location: New Orleans, Louisiana</p>
     </div>
   </div>
+  <footer class="w-full bg-gray-800 text-white p-2 text-center opacity-50">
+    <p class="text-sm">
+      © {new Date().getFullYear()}
+      mardi.camp is a project of
+      <a href="https://www.twitter.com/whiskeytuesday">
+        @whiskeytuesday
+      </a>
+      be good to each other stay cool.
+    </p>
+    <p class="text-sm"> the 2025 website is available <a href="/2025">here</a> </p>
+  </footer>
+</main>
 
-  <div class="win98-window">
-    <div class="window-title">Vibes</div>
-    <div class="window-content">
-      <p>
-        Mardi Gras doesn't have to be about taking drugs,
-        drinking too much, and taking your clothes off.
-      </p>
-      <p>That said, don't let me stop you.</p>
-      <p>
-        My vibe is much more about hanging out with cool people,
-        eating beignets, and watching the parades go by.
-        More Frenchman Street than Bourbon Street, iykyk.
-      </p>
-      <p>
-        But I'm not your dad so
-        <a href="https://www.youtube.com/watch?v=PsQzRZyWidk">
-          do what you wanna.
-        </a>
-      </p>
-    </div>
-  </div>
-
-  <div class="win98-window">
-    <div class="window-title">Logistics</div>
-    <div class="window-content">
-      <p>
-        I have put no thought into this, I have a hotel
-        reservation I made months ago but you probably want
-        to get together and figure out a big airbnb or make
-        your own reservations sooner rather than later.
-        Check back here for more information if anyone takes
-        the initiative.
-      </p>
-      <p>
-        UPDATE: there's a group chat and an airbnb. Ask me
-        if you want to be added but you will be expected to
-        commit soon. Time is passing. Carpe!
-      </p>
-      <p>
-        UPDATE TWO ELECTRIC BOOGALOO: There are two beds
-        left (and a couch I think) in the airbnb. Speak now
-        or forever get your own accommodations. The city
-        WILL basically completely sell out. You've been
-        warned.
-    </div>
-  </div>
-
-  <div class="win98-window">
-    <div class="window-title">Activities</div>
-    <div class="window-content">
-      <ul>
-        <li>March 2nd: Something?</li>
-        <li>March 3rd: Lundi Gras</li>
-        <li>March 4th: Mardi Gras</li>
-        <li>March 5th: Ash Wednesday, seek absolution</li>
-        <li>March 6th: Leave probably</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="win98-window">
-    <div class="window-title">Featured Guests</div>
-    <div class="window-content">
-      <ul>
-        <li>@WhiskeyTuesday</li>
-        <li>@dschorno</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="win98-window">
-    <div class="window-title">Contact</div>
-    <div class="window-content">
-      <p>
-        DM @WhiskeyTuesday on twitter if you're interested
-        in coming or have any questions or want to help
-        other people figure out their plans or want to
-        organize something or want me to put you on the
-        featured guest list or whatever.
-      </p>
-    </div>
-  </div>
-
- <div class="space-background">
-    {#each stars as star, i}
-      <div
-        class="star"
-        style="
-          left: {star.x}%;
-          top: {star.y}%;
-          --twinkle-speed: {star.twinkleSpeed}s;
-          --size: {star.baseSize}px;
-          --delay: {-star.offset}s;
-          --star-color: {star.color};
-        "
-      >
-      </div>
-    {/each}
-    <img src={mascot} alt="Mascot" class="mascot">
+<div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+  <div class="bg-white p-6 m-2 rounded-lg shadow-lg max-w-md w-full">
+    <h2 class="text-xl font-bold mb-4">Apply for Tickets</h2>
+    <p class="mb-4">Tickets are not available yet! Check back later.</p>
+    <button
+      class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-150"
+      on:click={() => document.getElementById('modal').classList.add('hidden')}
+    >
+      Close
+    </button>
   </div>
 </div>
 
 <style>
-  /* reinstate default HTML anchor styles */
-  a {
-    color: #00f;
-    text-decoration: underline;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-
-  a:visited {
-    color: #551a8b;
-  }
-
-  a:visited:hover {
-    color: #551a8b;
-  }
-
-  .content-wrapper {
-    padding: 10px;
-    background-color: #008080;
-    color: #fff;
-  }
-
-  .space-jam-marquee {
-    background-color: #000;
-    color: #ff0;
-    font-weight: bold;
-    padding: 5px;
-    margin-bottom: 10px;
-  }
-
-  .win98-window {
-    background-color: #c0c0c0;
-    border: 2px solid #fff;
-    box-shadow: 2px 2px 0 #000;
-    margin-bottom: 10px;
-  }
-
-  .win98-window p {
-    padding-bottom: 1rem;
-  }
-
-  .win98-window p:last-child {
-    padding-bottom: 0;
-  }
-
-  .window-title {
-    background-color: #000080;
-    color: #fff;
-    padding: 0.25rem;
-    padding-left: 0.5rem;
-    font-weight: bold;
-  }
-
-  .window-content {
-    padding: 10px;
-    color: #000;
-  }
-
-  .space-background {
-    position: relative;
-    height: 200px;
-    background-color: #fde1a2;
-    overflow: hidden;
-  }
-
-  .star {
-    position: absolute;
-    border-radius: 50%;
-    width: var(--size);
-    height: var(--size);
-    animation: twinkle var(--twinkle-speed) infinite ease-in-out;
-    animation-delay: var(--delay);
-  }
-
-  @keyframes twinkle {
-    0%, 100% {
-      background-color: color-mix(in srgb, var(--star-color) 30%, transparent);
-      transform: scale(0.8);
-    }
-    50% {
-      background-color: var(--star-color);
-      transform: scale(1.2);
-    }
-  }
-
-  .mascot {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    max-width: 25%;
-    animation: bounce 2s infinite;
-  }
-
-  @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-  }
-
   :global(body) {
     margin: 0;
     padding: 0;
     font-family: 'MS Sans Serif', Arial, sans-serif;
-    background-color: #008080;
     color: #000;
+    background-image: linear-gradient(to bottom right, #0AA14D, #582B7D, #FFD700);
+  }
+
+  a {
+    text-decoration: underline;
   }
 </style>
