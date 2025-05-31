@@ -28,7 +28,7 @@
 <main class="flex flex-col items-center justify-center min-h-screen">
   <div id="container" class="m-4">
     <div class="text-center text-white">
-      <h1 class="text-4xl font-bold">Mardi.camp</h1>
+      <h1 class="text-4xl font-bold">mardi.camp</h1>
       <p class="text-lg mt-2">
         The ultimate (only) ingroup weirdo twitter gathering at Mardi Gras 2026 (probably).
       </p>
@@ -70,7 +70,7 @@
       </a>
       be good to each other stay cool.
     </p>
-    <p class="text-sm"> the 2025 website is available <a href="/2025">here</a> </p>
+    <p class="text-sm">The 2025 website is available <a href="/2025">here.</a> </p>
   </footer>
 </main>
 
