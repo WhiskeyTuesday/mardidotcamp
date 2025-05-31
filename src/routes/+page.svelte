@@ -32,8 +32,8 @@
       <p class="text-lg mt-2">
         The ultimate (only) ingroup weirdo twitter gathering at Mardi Gras 2026 (probably).
       </p>
-      <p class="text-lg mt-2 italic">
-        Laisez les bon temps rouler? I hardly know her
+      <p class="text-lg mt-2">
+        <span title="Let the good times roll" class="italic">Laissez les bon temps rouler</span>? I hardly know her.
       </p>
       <p class="text-lg mt-8">{daysUntil} days until Mardi Gras 2026</p>
       <p class="text-lg mt-2">Mardi Camp events begin January 31st</p>
