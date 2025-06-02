@@ -23,6 +23,25 @@
   });
 
   let daysUntil = Math.ceil((new Date('2026-02-17') - new Date()) / (1000 * 60 * 60 * 24));
+
+  const events = [
+    {
+      date: 'January 31',
+      name: 'Krewe de Vieux',
+      time: '2:00 PM',
+      location: 'French Quarter',
+      memo: 'A fun and quirky parade to kick off the festivities.'
+    },
+    {
+      date: 'February 1',
+      name: 'Krewe of Joan of Arc',
+      time: '7:00 PM',
+      location: 'French Quarter',
+      memo: 'Celebrating the legacy of Joan of Arc with a unique twist.'
+    }
+  ];
+
+  let activeEvent = {};
 </script>
 
 <main class="flex flex-col items-center justify-center min-h-screen">
@@ -41,10 +60,17 @@
         <a href="https://www.mardigrasneworleans.com/parades/">Official Mardi Gras Parade Schedule</a>
       </p>
       <button
-        class="mt-4 px-6 py-2 bg-purple-700 text-white rounded border border-yellow-300 hover:bg-purple-800 transition-colors duration-150"
-        on:click={() => document.getElementById('modal').classList.remove('hidden')}
+        class="mt-4 mx-1 px-6 py-2 bg-purple-700 text-white rounded border border-yellow-300 hover:bg-purple-800 transition-colors duration-150"
+        on:click={() => document.getElementById('ticketModal').classList.remove('hidden')}
       >
         Apply for tickets
+      </button>
+
+      <button
+        class="mt-4 px-6 py-2 bg-purple-700 text-white rounded border border-yellow-300 hover:bg-purple-800 transition-colors duration-150"
+        on:click={() => document.getElementById('scheduleModal').classList.remove('hidden')}
+      >
+        Mardicamp events
       </button>
     </div>
     <div class="flex flex-col items-center m-8">
@@ -74,13 +100,72 @@
   </footer>
 </main>
 
-<div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+<div id="ticketModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
   <div class="bg-white p-6 m-2 rounded-lg shadow-lg max-w-md w-full">
     <h2 class="text-xl font-bold mb-4">Apply for Tickets</h2>
     <p class="mb-4">Tickets are not available yet! Check back later.</p>
     <button
-      class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-150"
-      on:click={() => document.getElementById('modal').classList.add('hidden')}
+      class="px-4 py-2 bg-purple-500 text-white rounded hover:bg-green-600 transition-colors duration-150 border border-yellow-300"
+      on:click={() => document.getElementById('ticketModal').classList.add('hidden')}
+    >
+      Close
+    </button>
+  </div>
+</div>
+
+<div id="scheduleModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+  <div class="bg-white p-6 m-2 rounded-lg shadow-lg max-w-md w-full">
+    <h2 class="text-xl font-bold mb-4">mardicamp events</h2>
+    <p class="text-lg mb-4">Event schedule tbd</p>
+    <!-- TODO add when events are programmed
+    <table class="w-full text-left border-collapse">
+      <thead>
+        <tr>
+          <th class="border-b-2 border-gray-300 p-2">Event </th>
+          <th class="border-b-2 border-gray-300 p-2"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {#each events as event}
+          <tr class="hover:bg-gray-100 transition-colors duration-150">
+            <td class="border-b p-2">{event.name}</td>
+            <td class="border-b p-2">
+              <button
+                class="text-green-500 hover:underline border border-green-300 rounded px-2 py-1 transition-colors duration-150 hover:bg-purple-200"
+                on:click={() => {
+                  document.getElementById('detailsModal').classList.remove('hidden');
+                  activeEvent = event;
+                }}
+              >
+                View Details
+              </button>
+            </td>
+          </tr>
+        {/each}
+      </tbody>
+    </table>
+    -->
+
+    <button
+      class="px-4 py-2 bg-purple-500 text-white rounded hover:bg-green-600 transition-colors duration-150 border border-yellow-300"
+      on:click={() => document.getElementById('scheduleModal').classList.add('hidden')}
+    >
+      Close
+    </button>
+  </div>
+</div>
+
+<!-- details submodal -->
+<div id="detailsModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+  <div class="bg-white p-6 m-2 rounded-lg shadow-lg max-w-md w-full">
+    <h2 class="text-xl font-bold mb-4">Event details</h2>
+    <p class="mb-4">{activeEvent.memo}</p>
+    <p class="mb-4">Date: {activeEvent.date}</p>
+    <p class="mb-4">Time: {activeEvent.time}</p>
+    <p class="mb-4">Location: {activeEvent.location}</p>
+    <button
+      class="px-4 py-2 bg-purple-500 text-white rounded hover:bg-green-600 transition-colors duration-150 border border-yellow-300"
+      on:click={() => document.getElementById('detailsModal').classList.add('hidden')}
     >
       Close
     </button>
