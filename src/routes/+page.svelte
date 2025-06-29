@@ -125,7 +125,7 @@
         <script src="https://web3forms.com/client/script.js" async defer></script>
         <form on:submit|preventDefault={handleSubmit} class="space-y-4">
           <input type="hidden" name="access_key" value="f9b8439f-cf20-40c1-809e-a88b2a9fcc45">
-          <input type="hidden" name="subject" value="Mardicamp 2026 info signupj">
+          <input type="hidden" name="subject" value="Mardicamp 2026 info signup">
           <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
