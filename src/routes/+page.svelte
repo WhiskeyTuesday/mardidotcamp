@@ -94,7 +94,6 @@
       <h1 class="text-4xl font-bold">mardi.camp</h1>
       <p class="text-lg mt-2">
         The ultimate (only) ingroup weirdo twitter gathering at Mardi Gras 2026 (probably).
-        -->
       </p>
       <p class="text-lg mt-2">
         <span title="Let the good times roll" class="italic">Laissez les bon temps rouler</span>? I hardly know her.
