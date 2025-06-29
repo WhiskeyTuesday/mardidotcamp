@@ -7,6 +7,7 @@
   const mgpurple = '#582B7D';
   const mggold = '#FFD700';
 
+  /*
   onMount(() => {
     const newStars = [];
     for (let i = 0; i < 50; i++) {
@@ -21,6 +22,7 @@
     }
     stars = newStars;
   });
+  */
 
   let daysUntil = Math.ceil((new Date('2026-02-17') - new Date()) / (1000 * 60 * 60 * 24));
 
@@ -92,6 +94,7 @@
       <h1 class="text-4xl font-bold">mardi.camp</h1>
       <p class="text-lg mt-2">
         The ultimate (only) ingroup weirdo twitter gathering at Mardi Gras 2026 (probably).
+        -->
       </p>
       <p class="text-lg mt-2">
         <span title="Let the good times roll" class="italic">Laissez les bon temps rouler</span>? I hardly know her.
@@ -101,6 +104,8 @@
       <p class="text-lg mt-2 underline hover:text-purple-300 transition-colors duration-150">
         <a href="https://www.mardigrasneworleans.com/parades/">Official Mardi Gras Parade Schedule</a>
       </p>
+
+      <!-- buttons
       <button
         class="mt-4 mx-1 px-6 py-2 bg-purple-700 text-white rounded border border-yellow-300 hover:bg-purple-800 transition-colors duration-150"
         on:click={() => document.getElementById('ticketModal').classList.remove('hidden')}
@@ -114,8 +119,37 @@
       >
         Mardicamp events
       </button>
-    </div>
+      -->
 
+      <h1 class="text-2xl font-bold mt-8">wtf is this?</h1>
+      <p class="text-lg mt-2 width-full max-w-2xl mx-auto">
+        New Orleans Mardi Gras 2026.
+      </p>
+      <p class="text-lg mt-2 width-full max-w-2xl mx-auto">
+        Me, you maybe, and a bunch of our weird twitter/tpot/vibecamp/ingroup
+        friends. Why? Well because it's fun.
+      </p>
+
+      <h1 class="text-2xl font-bold mt-8">isn't Mardi Gras just a big frat party with titties and beads?</h1>
+      <p class="text-lg mt-2 width-full max-w-2xl mx-auto">
+        Nah, Mardi Gras is very choose your own adventure.
+      </p>
+      <p class="text-lg mt-2 width-full max-w-2xl mx-auto">
+        Bourbon Street can be fun and you probably want to at least see the
+        madness but between the day and night parades, the music, the balls,
+        the food scene; there's way more to it than drugs, drunkenness,
+        and boobs. That said,
+        <!-- do what you wanna youtube link -->
+        <a
+          href="https://www.youtube.com/watch?v=PsQzRZyWidk"
+          class="text-purple-300 hover:text-purple-400 transition-colors duration-150"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          don't let me stop you.
+        </a>
+      </p>
+    </div>
     <!-- Signup Form Section -->
     <div class="mt-12 max-w-2xl mx-auto">
       <div class="bg-black bg-opacity-30 backdrop-blur-sm rounded-lg p-6 border border-yellow-300">
