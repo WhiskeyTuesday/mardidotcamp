@@ -88,6 +88,10 @@
   };
 </script>
 
+<svelte:head>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</svelte:head>
+
 <main class="flex flex-col items-center justify-center min-h-screen">
   <div id="container" class="m-4">
     <div class="text-center text-white">

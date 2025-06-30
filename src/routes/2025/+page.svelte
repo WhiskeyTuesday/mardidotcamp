@@ -33,6 +33,10 @@
   });
 </script>
 
+<svelte:head>
+  <link rel="icon" href="/favicon-2025.png" type="image/png" />
+</svelte:head>
+
 <main class="win98-container">
   <Header />
   <div class="content-wrapper">
