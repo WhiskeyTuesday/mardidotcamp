@@ -51,7 +51,7 @@
           <div class="text-xs text-gray-500 max-w-sm">
             *That's when the airbnb is, you can obviously come
             earlier or stay longer. I'm not in charge of the
-            Louisiana state border or anything (yet).Add commentMore actions
+            Louisiana state border or anything (yet).
           </div>
         </div>
         <p>Location: New Orleans, Louisiana</p>
@@ -83,6 +83,8 @@
     <div class="win98-window">
       <div class="window-title">Logistics</div>
       <div class="window-content">
+        /* section removed at some point I guess it's still
+        on github for posterity */
       </div>
     </div>
 
