@@ -28,18 +28,25 @@
 
   const events = [
     {
-      date: 'January 31',
-      name: 'Krewe de Vieux',
-      time: '2:00 PM',
-      location: 'French Quarter',
-      memo: 'A fun and quirky parade to kick off the festivities.'
+      date: 'February 11th',
+      name: 'Airbnb load in',
+      time: '4:00 PM',
+      location: 'final location tbd',
+      memo: 'Get settled in and ready for the week ahead.'
     },
     {
-      date: 'February 1',
-      name: 'Krewe of Joan of Arc',
-      time: '7:00 PM',
-      location: 'French Quarter',
-      memo: 'Celebrating the legacy of Joan of Arc with a unique twist.'
+      date: 'February 12th',
+      name: 'Krewe of Muses Parade',
+      time: '6:00 PM',
+      location: 'Uptown, St. Charles Ave',
+      memo: 'The Muses parade is best known for its all-female riders and its signature high heeled shoe throws.'
+    },
+    {
+      date: 'Onward',
+      name: 'More events tbd',
+      time: 'TBD',
+      location: 'TBD',
+      memo: 'Stay tuned for more events as I firm up plans!'
     }
   ];
 
@@ -103,7 +110,7 @@
         <span title="Let the good times roll" class="italic">Laissez les bon temps rouler</span>? I hardly know her.
       </p>
       <p class="text-lg mt-8">{daysUntil} days until Mardi Gras 2026</p>
-      <p class="text-lg mt-2">Mardi Camp events begin January 31st</p>
+      <p class="text-lg mt-2">mardi dot camp February 11th - 19th 2026</p>
       <p class="text-lg mt-2 underline hover:text-purple-300 transition-colors duration-150">
         <a href="https://www.mardigrasneworleans.com/parades/">Official Mardi Gras Parade Schedule</a>
       </p>
@@ -115,6 +122,7 @@
       >
         Apply for tickets
       </button>
+      -->
 
       <button
         class="mt-4 px-6 py-2 bg-purple-700 text-white rounded border border-yellow-300 hover:bg-purple-800 transition-colors duration-150"
@@ -122,7 +130,6 @@
       >
         Mardicamp events
       </button>
-      -->
 
       <h1 class="text-2xl font-bold mt-8">wtf is this?</h1>
       <p class="text-lg mt-2 width-full max-w-2xl mx-auto">
@@ -154,6 +161,7 @@
       </p>
     </div>
     <!-- Signup Form Section -->
+    <!--
     <div class="mt-12 max-w-2xl mx-auto">
       <div class="bg-black bg-opacity-30 backdrop-blur-sm rounded-lg p-6 border border-yellow-300">
         <h2 class="text-2xl font-bold text-white text-center mb-4">Subscribe for More Information</h2>
@@ -295,6 +303,7 @@
                 </form>
               </div>
             </div>
+            -->
 
             <div class="flex flex-col items-center m-8">
               <p class="text-white text-lg text-center">
@@ -339,8 +348,6 @@
         <div id="scheduleModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
           <div class="bg-white p-6 m-2 rounded-lg shadow-lg max-w-md w-full">
             <h2 class="text-xl font-bold mb-4">mardicamp events</h2>
-            <p class="text-lg mb-4">Event schedule tbd</p>
-            <!-- TODO add when events are programmed
             <table class="w-full text-left border-collapse">
               <thead>
                 <tr>
@@ -367,7 +374,6 @@
                 {/each}
               </tbody>
             </table>
-            -->
 
             <button
               class="px-4 py-2 bg-purple-500 text-white rounded hover:bg-green-600 transition-colors duration-150 border border-yellow-300"
