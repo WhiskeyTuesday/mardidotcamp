@@ -29,25 +29,151 @@
 
   const events = [
     {
-      date: 'February 11th',
-      name: 'Airbnb load in',
+      date: 'Wednesday, February 11th',
+      name: 'Load-in Day',
       time: '4:00 PM',
-      location: 'final location tbd',
-      memo: 'Get settled in and ready for the week ahead.'
+      location: 'Airbnb (address via groupchat)',
+      memo: 'Get settled in and ready for the week ahead. Please don\'t get me banned from AirBNB.'
     },
     {
-      date: 'February 12th',
-      name: 'Krewe of Muses Parade',
+      date: 'Thursday, February 12th',
+      name: 'Knights of Babylon',
+      time: '5:30 PM',
+      location: 'Uptown, Napoleon near Chestnut St',
+      memo: 'One of the oldest parading krewes, founded 1939. Classic Mardi Gras.'
+    },
+    {
+      date: 'Thursday, February 12th',
+      name: 'Krewe of Muses',
       time: '6:00 PM',
-      location: 'Uptown, St. Charles Ave',
-      memo: 'The Muses parade is best known for its all-female riders and its signature high heeled shoe throws.'
+      location: 'Uptown, Napoleon near Chestnut St',
+      memo: 'All-female krewe famous for hand-decorated shoes and wit. A crowd favorite.'
     },
     {
-      date: 'Onward',
-      name: 'More events tbd',
-      time: 'TBD',
+      date: 'Thursday, February 12th',
+      name: 'Post-parade hangout',
+      time: 'After Muses',
+      location: 'Frenchmen St or Howlin\' Wolf',
+      memo: 'Live music and drinks. Welcome to Mardi Gras.'
+    },
+    {
+      date: 'Friday, February 13th',
+      name: 'Krewe of Hermes',
+      time: '5:30 PM',
+      location: 'Uptown, Napoleon near Chestnut St',
+      memo: 'Old-line krewe founded 1937. Known for elegant floats.'
+    },
+    {
+      date: 'Friday, February 13th',
+      name: 'Krewe d\'Etat',
+      time: '6:30 PM',
+      location: 'Uptown, Napoleon near Chestnut St',
+      memo: 'Satirical krewe known for biting political commentary on their floats.'
+    },
+    {
+      date: 'Friday, February 13th',
+      name: 'Bourbon Street (optional)',
+      time: 'Late night',
+      location: 'French Quarter',
+      memo: 'For those who want to see the chaos. Frenchmen Street after to decompress.'
+    },
+    {
+      date: 'Saturday, February 14th',
+      name: 'Krewe of Iris',
+      time: '11:00 AM',
+      location: 'Uptown',
+      memo: 'Oldest all-female krewe, founded 1917. Big and fun.'
+    },
+    {
+      date: 'Saturday, February 14th',
+      name: 'Krewe of Tucks',
+      time: '12:00 PM',
+      location: 'Uptown',
+      memo: 'Irreverent krewe with toilet-themed throws. Exactly what it sounds like.'
+    },
+    {
+      date: 'Saturday, February 14th',
+      name: 'Samedi Gras Block Party',
+      time: '12:00 PM',
+      location: 'Orleans Ave at Carrollton (Mid-City)',
+      memo: 'Endymion\'s pre-parade street party. Live music, food, 30,000+ people.'
+    },
+    {
+      date: 'Saturday, February 14th',
+      name: 'Krewe of Endymion',
+      time: '4:00 PM',
+      location: 'Mid-City',
+      memo: 'Massive super krewe with celebrity riders and enormous floats.'
+    },
+    {
+      date: 'Saturday, February 14th',
+      name: 'Palentine\'s dinner (optional)',
+      time: 'Evening',
       location: 'TBD',
-      memo: 'Stay tuned for more events as I firm up plans!'
+      memo: 'Lonely hearts Valentine\'s dinner for those interested.'
+    },
+    {
+      date: 'Sunday, February 15th',
+      name: 'Krewe of Bacchus',
+      time: '5:15 PM',
+      location: 'Uptown, Napoleon near Chestnut St',
+      memo: 'Super krewe with celebrity monarchs and some of the biggest floats you\'ll see.'
+    },
+    {
+      date: 'Monday, February 16th',
+      name: 'Krewe of Proteus',
+      time: '5:15 PM',
+      location: 'Uptown',
+      memo: 'Second-oldest continuously parading krewe, founded 1882. Old New Orleans elegance.'
+    },
+    {
+      date: 'Monday, February 16th',
+      name: 'Krewe of Orpheus',
+      time: '6:00 PM',
+      location: 'Uptown',
+      memo: 'Lundi Gras super krewe founded by Harry Connick Jr. Celebrity riders, massive floats.'
+    },
+    {
+      date: 'Tuesday, February 17th',
+      name: 'Skull and Bones Gang (optional)',
+      time: 'Before dawn',
+      location: 'Treme',
+      memo: 'Traditional Mardi Gras morning wake-up. Very early. See the guide for details.'
+    },
+    {
+      date: 'Tuesday, February 17th',
+      name: 'Zulu Social Aid & Pleasure Club',
+      time: '8:00 AM',
+      location: 'Uptown to Canal St',
+      memo: 'Historic Black krewe. Hand-painted coconuts are the prized throw. Get there early.'
+    },
+    {
+      date: 'Tuesday, February 17th',
+      name: 'Rex',
+      time: '10:30 AM',
+      location: 'Uptown to Canal St',
+      memo: 'The King of Carnival since 1872. Old-line tradition at its finest.'
+    },
+    {
+      date: 'Tuesday, February 17th',
+      name: 'St. Anne\'s Walking Parade',
+      time: 'Morning',
+      location: 'Marigny to French Quarter',
+      memo: 'Costume-heavy walking parade through the Marigny. Costumes strongly encouraged.'
+    },
+    {
+      date: 'Wednesday, February 18th',
+      name: 'Ash Wednesday',
+      time: 'Whenever you wake up',
+      location: 'St. Louis Cathedral / various',
+      memo: 'It\'s over. Seek absolution if that\'s your thing. Mass available.'
+    },
+    {
+      date: 'Thursday, February 19th',
+      name: 'Load-out Day',
+      time: 'Morning',
+      location: 'Airbnb',
+      memo: 'Pack up and head out. Ask in groupchat if you need pre-flight suggestions.'
     }
   ];
 
@@ -138,6 +264,13 @@
         class="inline-block mt-4 ml-2 px-6 py-2 bg-green-600 text-white rounded border border-yellow-300 hover:bg-green-700 transition-colors duration-150 no-underline"
       >
         Last minute signups
+      </a>
+
+      <a
+        href="/guide"
+        class="inline-block mt-4 ml-2 px-6 py-2 bg-purple-700 text-white rounded border border-yellow-300 hover:bg-purple-800 transition-colors duration-150 no-underline"
+      >
+        Attendee guide
       </a>
 
       <h1 class="text-2xl font-bold mt-8">wtf is this?</h1>
