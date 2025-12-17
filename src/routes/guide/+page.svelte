@@ -118,10 +118,11 @@
           <p>Costumes are encouraged, especially on Mardi Gras day. You'll feel underdressed without one.</p>
 
           <div>
-            <h3 class="text-xl font-bold text-yellow-300">Coordinated Group Themes</h3>
+            <h3 class="text-xl font-bold text-yellow-300">Coordinated Group Themes (optional)</h3>
+            <p class="mb-2">Some friends of ours are doing coordinated costumes on certain days. Totally optional, but if you want to join in:</p>
             <ul class="list-disc list-inside ml-2 space-y-2">
-              <li><strong>Saturday (Valentine's Day / Endymion)</strong> - Some folks doing campy Valentine's costumes. Red, white, pink.</li>
-              <li><strong>Tuesday (Mardi Gras)</strong> - Disco ball theme costumes for the St. Anne's parade.</li>
+              <li><strong>Saturday (Valentine's Day / Endymion)</strong> - Campy Valentine's costumes. Red, white, pink.</li>
+              <li><strong>Tuesday (Mardi Gras)</strong> - Disco ball theme for the St. Anne's parade.</li>
             </ul>
           </div>
 
