@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import mascot from '$lib/mascot.png';
   import fates from '$lib/fates.jpeg';
+  import LookingAhead2027 from '$lib/components/LookingAhead2027.svelte';
 
   const mggreen = '#0AA14D';
   const mgpurple = '#582B7D';
@@ -96,6 +97,7 @@
 </script>
 
 <svelte:head>
+  <title>mardi.camp - Mardi Gras 2026</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 </svelte:head>
 
@@ -131,20 +133,27 @@
         Mardicamp events
       </button>
 
+      <a
+        href="/last-minute"
+        class="inline-block mt-4 ml-2 px-6 py-2 bg-green-600 text-white rounded border border-yellow-300 hover:bg-green-700 transition-colors duration-150 no-underline"
+      >
+        Last minute signups
+      </a>
+
       <h1 class="text-2xl font-bold mt-8">wtf is this?</h1>
-      <p class="text-lg mt-2 width-full max-w-2xl mx-auto">
+      <p class="text-lg mt-2 w-full max-w-2xl mx-auto">
         New Orleans Mardi Gras 2026.
       </p>
-      <p class="text-lg mt-2 width-full max-w-2xl mx-auto">
+      <p class="text-lg mt-2 w-full max-w-2xl mx-auto">
         Me, you maybe, and a bunch of our weird twitter/tpot/vibecamp/ingroup
         friends. Why? Well because it's fun.
       </p>
 
       <h1 class="text-2xl font-bold mt-8">isn't Mardi Gras just a big frat party with titties and beads?</h1>
-      <p class="text-lg mt-2 width-full max-w-2xl mx-auto">
+      <p class="text-lg mt-2 w-full max-w-2xl mx-auto">
         Nah, Mardi Gras is very choose your own adventure.
       </p>
-      <p class="text-lg mt-2 width-full max-w-2xl mx-auto">
+      <p class="text-lg mt-2 w-full max-w-2xl mx-auto">
         Bourbon Street can be fun and you probably want to at least see the
         madness but between the day and night parades, the music, the balls,
         the food scene; there's way more to it than drugs, drunkenness,
@@ -317,6 +326,11 @@
                   />
                 </div>
               </div>
+            </div>
+
+            <!-- 2027 Teaser -->
+            <div class="flex flex-col items-center m-8 max-w-2xl mx-auto">
+              <LookingAhead2027 />
             </div>
           </div>
           <footer class="w-full bg-gray-800 text-white p-2 text-center opacity-50">
