@@ -479,8 +479,8 @@
           </footer>
         </main>
 
-        <div id="ticketModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
-          <div class="bg-white p-6 m-2 rounded-lg shadow-lg max-w-md w-full">
+        <div id="ticketModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden p-4 sm:p-8 overflow-y-auto">
+          <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg max-w-md w-full max-h-full overflow-y-auto my-auto">
             <h2 class="text-xl font-bold mb-4">Apply for Tickets</h2>
             <p class="mb-4">Tickets are not available yet! Check back later.</p>
             <button
@@ -492,38 +492,40 @@
           </div>
         </div>
 
-        <div id="scheduleModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
-          <div class="bg-white p-6 m-2 rounded-lg shadow-lg max-w-md w-full">
+        <div id="scheduleModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden p-4 sm:p-8 overflow-y-auto">
+          <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg max-w-md w-full max-h-full overflow-y-auto my-auto">
             <h2 class="text-xl font-bold mb-4">mardicamp events</h2>
-            <table class="w-full text-left border-collapse">
-              <thead>
-                <tr>
-                  <th class="border-b-2 border-gray-300 p-2">Event </th>
-                  <th class="border-b-2 border-gray-300 p-2"></th>
-                </tr>
-              </thead>
-              <tbody>
-                {#each events as event}
-                <tr class="hover:bg-gray-100 transition-colors duration-150">
-                  <td class="border-b p-2">{event.name}</td>
-                  <td class="border-b p-2">
-                    <button
-                      class="text-green-500 hover:underline border border-green-300 rounded px-2 py-1 transition-colors duration-150 hover:bg-purple-200"
-                      on:click={() => {
-                      document.getElementById('detailsModal').classList.remove('hidden');
-                      activeEvent = event;
-                      }}
-                    >
-                      View Details
-                    </button>
-                  </td>
-                </tr>
-                {/each}
-              </tbody>
-            </table>
+            <div class="overflow-y-auto max-h-[60vh]">
+              <table class="w-full text-left border-collapse">
+                <thead>
+                  <tr>
+                    <th class="border-b-2 border-gray-300 p-2">Event </th>
+                    <th class="border-b-2 border-gray-300 p-2"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {#each events as event}
+                  <tr class="hover:bg-gray-100 transition-colors duration-150">
+                    <td class="border-b p-2 text-sm sm:text-base">{event.name}</td>
+                    <td class="border-b p-2">
+                      <button
+                        class="text-green-500 hover:underline border border-green-300 rounded px-2 py-1 transition-colors duration-150 hover:bg-purple-200 text-sm"
+                        on:click={() => {
+                        document.getElementById('detailsModal').classList.remove('hidden');
+                        activeEvent = event;
+                        }}
+                      >
+                        Details
+                      </button>
+                    </td>
+                  </tr>
+                  {/each}
+                </tbody>
+              </table>
+            </div>
 
             <button
-              class="px-4 py-2 bg-purple-500 text-white rounded hover:bg-green-600 transition-colors duration-150 border border-yellow-300"
+              class="mt-4 px-4 py-2 bg-purple-500 text-white rounded hover:bg-green-600 transition-colors duration-150 border border-yellow-300"
               on:click={() => document.getElementById('scheduleModal').classList.add('hidden')}
             >
               Close
@@ -532,8 +534,8 @@
         </div>
 
         <!-- details submodal -->
-        <div id="detailsModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
-          <div class="bg-white p-6 m-2 rounded-lg shadow-lg max-w-md w-full">
+        <div id="detailsModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden p-4 sm:p-8 overflow-y-auto">
+          <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg max-w-md w-full max-h-full overflow-y-auto my-auto">
             <h2 class="text-xl font-bold mb-4">Event details</h2>
             <p class="mb-4">{activeEvent.memo}</p>
             <p class="mb-4">Date: {activeEvent.date}</p>
@@ -549,8 +551,8 @@
         </div>
 
         <!-- Form Status Modal -->
-        <div id="formModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center {formStatus ? '' : 'hidden'}">
-          <div class="bg-white rounded-lg shadow-xl overflow-hidden w-full max-w-md border-2 border-yellow-300 relative">
+        <div id="formModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 sm:p-8 overflow-y-auto {formStatus ? '' : 'hidden'}">
+          <div class="bg-white rounded-lg shadow-xl overflow-hidden w-full max-w-md border-2 border-yellow-300 relative my-auto">
             <div class="bg-purple-700 text-white p-4 text-center">
               <h3 class="font-bold text-xl">Form Submission</h3>
             </div>
