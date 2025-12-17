@@ -67,7 +67,7 @@
           <div>
             <h3 class="text-xl font-bold text-yellow-300">Quick Eats</h3>
             <ul class="list-disc list-inside ml-2">
-              <li><strong>Verti Marte</strong> - Legendary deli in the Quarter. Get the "All That Jazz" po-boy.</li>
+              <li><strong>Verti Marte</strong> - Legendary deli in the Quarter. Get any of the sandwiches trust me.</li>
               <li><strong>Clover Grill</strong> - 24-hour diner. Burgers cooked under a hubcap. Weird and great.</li>
             </ul>
           </div>
