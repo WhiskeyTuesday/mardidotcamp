@@ -80,7 +80,7 @@
           </p>
 
           <p class="mb-4">
-            <strong>Event schedule:</strong> The schedule on the <a href="/" class="text-purple-300 hover:text-purple-400">homepage</a> will be filled out later today (Wednesday, December 17th).
+            Check out the <a href="/guide" class="text-purple-300 hover:text-purple-400">attendee guide</a> for food, drinks, and things to see in New Orleans.
           </p>
 
           <h3 class="text-xl font-bold mt-6 mb-3">Want to come?</h3>
