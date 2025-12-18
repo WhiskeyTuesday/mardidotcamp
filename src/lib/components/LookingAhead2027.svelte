@@ -6,7 +6,7 @@
   </p>
 
   <p class="text-white text-center mb-4">
-    2027 is going to be a <strong>real tpot camp</strong>: less pirate-radio, more actual organization. Ticketing and planning will start much earlier, some time in spring 2026.
+    2027 is going to be a <strong>"real tpot camp"</strong>: less pirate-radio, more actual organization. Ticketing and planning will start much earlier, some time in spring 2026.
   </p>
 
   <p class="text-purple-300 text-center">
