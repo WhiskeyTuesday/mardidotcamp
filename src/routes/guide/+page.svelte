@@ -24,12 +24,12 @@
         <div class="text-white space-y-4">
           <div>
             <h3 class="text-xl font-bold text-yellow-300">French Quarter</h3>
-            <p>The historic heart of New Orleans. Jackson Square, St. Louis Cathedral, Bourbon Street (the chaos), and Royal Street (the charm). Tourist central but worth seeing.</p>
+            <p>The historic heart of New Orleans. Jackson Square, St. Louis Cathedral, Bourbon Street (the chaos), and Royal Street (the charm). </p>
           </div>
 
           <div>
             <h3 class="text-xl font-bold text-yellow-300">Frenchmen Street / Marigny</h3>
-            <p>Where locals go for live music. Multiple clubs with brass bands, jazz, funk. Way better vibe than Bourbon if you want actual music.</p>
+            <p>Where locals go for live music. Multiple clubs with brass bands, jazz, funk. Way better vibe than Bourbon if you want to listen to music.</p>
           </div>
 
           <div>
@@ -69,6 +69,7 @@
             <ul class="list-disc list-inside ml-2">
               <li><strong>Verti Marte</strong> - Legendary deli in the Quarter. Get any of the sandwiches trust me.</li>
               <li><strong>Clover Grill</strong> - 24-hour diner. Burgers cooked under a hubcap. Weird and great.</li>
+              <li><strong>Willie Mae's Scotch House</strong> - Fried chicken spot in Treme. Worth the wait.</li>
             </ul>
           </div>
 
@@ -76,6 +77,7 @@
             <h3 class="text-xl font-bold text-yellow-300">Sit-down</h3>
             <ul class="list-disc list-inside ml-2">
               <li><strong>Stanley</strong> - On Jackson Square. Brunch spot, a little bougier.</li>
+              <li><strong>Ruby Slipper Cafe</strong> - Decent breakfast and brunch, multiple locations.</li>
             </ul>
           </div>
 
@@ -83,9 +85,9 @@
             <h3 class="text-xl font-bold text-yellow-300">Bars & Music</h3>
             <ul class="list-disc list-inside ml-2">
               <li><strong>Kermit's Treme Mother-in-Law Lounge</strong> - Kermit Ruffins' spot. Brass band, BBQ, the real deal.</li>
-              <li><strong>Bullet's Sports Bar</strong> - Dive bar in the 7th Ward. If you're feeling adventurous.</li>
+              <li><strong>Bullet's Sports Bar</strong> - Dive bar in the 7th Ward, if you're feeling adventurous.</li>
               <li><strong>Tipitina's</strong> - Legendary Uptown music venue. Check the schedule.</li>
-              <li><strong>Frenchmen Street</strong> - Just walk down and follow your ears. d.b.a., Spotted Cat, Blue Nile.</li>
+              <li><strong>Frenchmen Street</strong> - Just walk down and follow your ears. d.b.a., Spotted Cat, Blue Nile, etc.</li>
             </ul>
           </div>
         </div>
@@ -115,7 +117,7 @@
         <h2 class="text-2xl font-bold text-white text-center mb-4 text-purple-300">Costumes & What to Wear</h2>
 
         <div class="text-white space-y-4">
-          <p>Costumes are encouraged, especially on Mardi Gras day. You'll feel underdressed without one.</p>
+          <p>Costumes are encouraged, especially on Mardi Gras day. You'll feel underdressed without something thematic at least. </p>
 
           <div>
             <h3 class="text-xl font-bold text-yellow-300">Coordinated Group Themes (optional)</h3>
@@ -139,7 +141,12 @@
 
           <div>
             <h3 class="text-xl font-bold text-yellow-300">Skull and Bones (Mardi Gras morning)</h3>
-            <p>Some people we know are joining the Skull and Bones Gang on Mardi Gras morning. This is a traditional Black masking tradition, starts before dawn in the Treme. Skeleton costumes, door-knocking to wake people up and remind them of mortality. Not a tourist thing, but if you're invited and want to participate, ask in the groupchat.</p>
+            <p>
+              Some people we know are joining the Skull and Bones Gang on Mardi Gras morning.
+              This is a traditional Black masking tradition, starts before dawn in the Treme.
+              Skeleton costumes, door-knocking to wake people up and remind them of mortality.
+              Not a tourist thing, but if you want to participate, ask in the groupchat.
+            </p>
           </div>
         </div>
       </div>

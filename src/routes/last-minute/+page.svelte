@@ -76,7 +76,7 @@
           </p>
 
           <p class="mb-4">
-            If we don't expand into another unit and just one or two people join up, I might be able to get you somewhere for cheaper, but I can't guarantee it. Last minute signups are necessarily going to be kind of manually planned.
+            If we don't expand into another unit and just one or two people join up, I might be able to get you somewhere for cheaper, but I can't guarantee it. Last minute signups are necessarily going to be kind of manually arranged.
           </p>
 
           <p class="mb-4">
