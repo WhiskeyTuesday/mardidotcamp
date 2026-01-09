@@ -53,7 +53,7 @@
       date: 'Thursday, February 12th',
       name: 'Post-parade hangout',
       time: 'After Muses',
-      location: 'Frenchmen St or Howlin\' Wolf',
+      location: 'Frenchmen St or Howlin\' Wolf?',
       memo: 'Live music and drinks. Welcome to Mardi Gras.'
     },
     {
@@ -89,7 +89,7 @@
       name: 'Krewe of Tucks',
       time: '12:00 PM',
       location: 'Uptown',
-      memo: 'Irreverent krewe with toilet-themed throws. Exactly what it sounds like.'
+      memo: 'Irreverent krewe with toilet-themed throws.',
     },
     {
       date: 'Saturday, February 14th',
@@ -163,6 +163,13 @@
     },
     {
       date: 'Wednesday, February 18th',
+      name: 'Midnight Mass (optional)',
+      time: 'Midnight',
+      location: 'St. Louis Cathedral',
+      memo: 'For those who want to start Ash Wednesday the traditional way.'
+    },
+    {
+      date: 'Wednesday, February 18th',
       name: 'Ash Wednesday',
       time: 'Whenever you wake up',
       location: 'St. Louis Cathedral / various',
@@ -172,7 +179,7 @@
       date: 'Thursday, February 19th',
       name: 'Load-out Day',
       time: 'Morning',
-      location: 'Airbnb',
+      location: 'Airbnbs',
       memo: 'Pack up and head out. Ask in groupchat if you need pre-flight suggestions.'
     }
   ];
