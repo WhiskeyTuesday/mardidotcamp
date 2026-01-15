@@ -29,7 +29,7 @@
 
   const events = [
     {
-      date: 'Wednesday, February 11th',
+      date: 'Wednesday, February 12th',
       name: 'Load-in Day',
       time: '4:00 PM',
       location: 'Airbnb (address via groupchat)',
@@ -245,7 +245,7 @@
         <span title="Let the good times roll" class="italic">Laissez les bon temps rouler</span>? I hardly know her.
       </p>
       <p class="text-lg mt-8">{daysUntil} days until Mardi Gras 2026</p>
-      <p class="text-lg mt-2">mardi dot camp February 11th - 19th 2026</p>
+      <p class="text-lg mt-2">mardi dot camp February 12th - 19th 2026</p>
       <p class="text-lg mt-2 underline hover:text-purple-300 transition-colors duration-150">
         <a href="https://www.mardigrasneworleans.com/parades/">Official Mardi Gras Parade Schedule</a>
       </p>
