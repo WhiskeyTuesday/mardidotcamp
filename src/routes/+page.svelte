@@ -29,7 +29,7 @@
 
   const events = [
     {
-      date: 'Wednesday, February 12th',
+      date: 'Thursday, February 12th',
       name: 'Load-in Day',
       time: '4:00 PM',
       location: 'Airbnb (address via groupchat)',
