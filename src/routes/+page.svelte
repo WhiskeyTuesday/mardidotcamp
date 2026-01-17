@@ -26,6 +26,7 @@
   */
 
   let daysUntil = Math.ceil((new Date('2026-02-17') - new Date()) / (1000 * 60 * 60 * 24));
+  let daysUntilMC = Math.ceil((new Date('2026-02-17') - new Date()) / (1000 * 60 * 60 * 24));
 
   const events = [
     {
@@ -244,6 +245,7 @@
       <p class="text-lg mt-2">
         <span title="Let the good times roll" class="italic">Laissez les bon temps rouler</span>? I hardly know her.
       </p>
+      <p class="text-md mt-8">{daysUntilMC} days until Mardicamp</p>
       <p class="text-lg mt-8">{daysUntil} days until Mardi Gras 2026</p>
       <p class="text-lg mt-2">mardi dot camp February 12th - 19th 2026</p>
       <p class="text-lg mt-2 underline hover:text-purple-300 transition-colors duration-150">
