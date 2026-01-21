@@ -246,8 +246,8 @@
         <span title="Let the good times roll" class="italic">Laissez les bon temps rouler</span>? I hardly know her.
       </p>
       <p class="text-md mt-8 italic">{daysUntilMC} days until Mardicamp</p>
-      <p class="text-lg mt-2">{daysUntil} days until Mardi Gras 2026</p>
-      <p class="text-lg mt-2">mardi dot camp February 12th - 19th 2026</p>
+      <p class="text-lg mt-2">{daysUntil} days until Mardi Gras 2026 (Feb 17th)</p>
+      <p class="text-lg mt-2">February 12th - 19th 2026</p>
       <p class="text-lg mt-2 underline hover:text-purple-300 transition-colors duration-150">
         <a href="https://www.mardigrasneworleans.com/parades/">Official Mardi Gras Parade Schedule</a>
       </p>
