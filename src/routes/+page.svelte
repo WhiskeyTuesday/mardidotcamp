@@ -251,6 +251,9 @@
       <p class="text-lg mt-2 underline hover:text-purple-300 transition-colors duration-150">
         <a href="https://www.mardigrasneworleans.com/parades/">Official Mardi Gras Parade Schedule</a>
       </p>
+      <p class="text-lg mt-2 underline hover:text-purple-300 transition-colors duration-150">
+        <a href="https://www.accuweather.com/en/us/new-orleans/70112/daily-weather-forecast/348585">New Orleans long term weather forecast</a>
+      </p>
 
       <!-- buttons
       <button
