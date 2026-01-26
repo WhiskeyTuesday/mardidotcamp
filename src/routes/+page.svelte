@@ -2,7 +2,6 @@
   import { onMount } from 'svelte';
   import mascot from '$lib/mascot.png';
   import fates from '$lib/fates.jpeg';
-  import LookingAhead2027 from '$lib/components/LookingAhead2027.svelte';
 
   const mggreen = '#0AA14D';
   const mgpurple = '#582B7D';
@@ -272,13 +271,6 @@
       </button>
 
       <a
-        href="/last-minute"
-        class="inline-block mt-4 ml-2 px-6 py-2 bg-green-600 text-white rounded border border-yellow-300 hover:bg-green-700 transition-colors duration-150 no-underline"
-      >
-        Last minute signups
-      </a>
-
-      <a
         href="/guide"
         class="inline-block mt-4 ml-2 px-6 py-2 bg-purple-700 text-white rounded border border-yellow-300 hover:bg-purple-800 transition-colors duration-150 no-underline"
       >
@@ -471,11 +463,6 @@
                   />
                 </div>
               </div>
-            </div>
-
-            <!-- 2027 Teaser -->
-            <div class="flex flex-col items-center m-8 max-w-2xl mx-auto">
-              <LookingAhead2027 />
             </div>
           </div>
           <footer class="w-full bg-gray-800 text-white p-2 text-center opacity-50">
