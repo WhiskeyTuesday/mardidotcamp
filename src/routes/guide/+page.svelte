@@ -16,6 +16,16 @@
       </p>
     </div>
 
+    <div class="mt-8 bg-black bg-opacity-30 backdrop-blur-sm rounded-lg p-6 border border-yellow-300">
+      <h2 class="text-2xl font-bold text-yellow-300 text-center mb-4">Parade Tracker</h2>
+      <p class="text-lg text-center mt-2 underline text-purple-300 hover:text-purple-400 transition-colors duration-150">
+        <a href="https://ready.nola.gov/mardi-gras/parades/">NOLA Ready parade tracker</a>
+      </p>
+      <p class="text-white text-center">
+        Check this for up-to-date parade routes, times, and any last-minute changes.
+      </p>
+    </div>
+
     <!-- Neighborhoods -->
     <div class="mt-8">
       <div class="bg-black bg-opacity-30 backdrop-blur-sm rounded-lg p-6 border border-yellow-300">
@@ -173,7 +183,7 @@
         <h2 class="text-2xl font-bold text-white text-center mb-4 text-green-300">Questions?</h2>
 
         <p class="text-white text-center">
-          Text or DM <a href="https://twitter.com/whiskeytuesday" class="text-purple-300 hover:text-purple-400" target="_blank" rel="noopener noreferrer">@whiskeytuesday</a> any time. Seriously, any time. I want you to have a good time.
+          Text or DM <a href="https://twitter.com/whiskeytuesday" class="text-purple-300 hover:text-purple-400" target="_blank" rel="noopener noreferrer">@whiskeytuesday</a> any time. Seriously any time. I want you to have a good time.
         </p>
       </div>
     </div>
