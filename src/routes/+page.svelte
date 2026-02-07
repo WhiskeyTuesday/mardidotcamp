@@ -106,13 +106,6 @@
       memo: 'Massive super krewe with celebrity riders and enormous floats.'
     },
     {
-      date: 'Saturday, February 14th',
-      name: 'Palentine\'s dinner (optional)',
-      time: 'Evening',
-      location: 'TBD',
-      memo: 'Lonely hearts Valentine\'s dinner for those interested.'
-    },
-    {
       date: 'Sunday, February 15th',
       name: 'Krewe of Bacchus',
       time: '5:15 PM',
@@ -249,6 +242,9 @@
       <p class="text-lg mt-2">February 12th - 19th 2026</p>
       <p class="text-lg mt-2 underline hover:text-purple-300 transition-colors duration-150">
         <a href="https://www.mardigrasneworleans.com/parades/">Official Mardi Gras parade schedule</a>
+      </p>
+      <p class="text-lg mt-2 underline hover:text-purple-300 transition-colors duration-150">
+        <a href="https://ready.nola.gov/mardi-gras/parades/">NOLA Ready live parade tracker</a>
       </p>
       <p class="text-lg mt-2 underline hover:text-purple-300 transition-colors duration-150">
         <a href="https://www.accuweather.com/en/us/new-orleans/70112/daily-weather-forecast/348585">New Orleans long term weather forecast</a>
