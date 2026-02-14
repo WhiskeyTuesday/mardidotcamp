@@ -156,13 +156,6 @@
     },
     {
       date: 'Wednesday, February 18th',
-      name: 'Midnight Mass (optional)',
-      time: 'Midnight',
-      location: 'St. Louis Cathedral',
-      memo: 'For those who want to start Ash Wednesday the traditional way.'
-    },
-    {
-      date: 'Wednesday, February 18th',
       name: 'Ash Wednesday',
       time: 'Whenever you wake up',
       location: 'St. Louis Cathedral / various',
