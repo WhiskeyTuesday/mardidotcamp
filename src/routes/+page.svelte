@@ -1,7 +1,7 @@
 <script>
   import { onMount } from 'svelte';
-  import mascot from '$lib/mascot.png';
-  import fates from '$lib/fates.jpeg';
+  import mascot from '#lib/mascot.png';
+  import fates from '#lib/fates.jpeg';
 
   const mggreen = '#0AA14D';
   const mgpurple = '#582B7D';

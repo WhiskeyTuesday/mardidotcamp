@@ -1,9 +1,9 @@
 <script>
-  import Header from '$lib/components/Header.svelte';
-  import Footer from '$lib/components/Footer.svelte';
+  import Header from '#lib/components/Header.svelte';
+  import Footer from '#lib/components/Footer.svelte';
 
   import { onMount } from 'svelte';
-  import mascot from '$lib/mascot.png';
+  import mascot from '#lib/mascot.png';
 
   let marqueeText = "Welcome to Mardi.camp - The ultimate (only) ingroup weirdo"
   + " twitter gathering at Mardi Gras 2026 (probably). Laisez les bon temps"
