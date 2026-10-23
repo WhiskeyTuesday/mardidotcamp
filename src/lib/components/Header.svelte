@@ -1,5 +1,5 @@
 <script>
-  import { X, Square, Minus } from "lucide-svelte";
+  import { X, Square, Minus } from "@lucide/svelte";
 
   // always show time in New Orleans time
   let currentTime = new Date().toLocaleTimeString(
