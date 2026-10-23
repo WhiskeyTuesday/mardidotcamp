@@ -6,7 +6,7 @@
   <p>© 2025 Mardi.camp - All rights reserved</p>
   <p>Best viewed with Netscape Navigator or Internet Explorer 5</p>
   <p>
-    <a href="{page.url.href}">mardi.camp</a> is powered by
+    <a href="{page.url.pathname}">mardi.camp</a> is powered by
     <a href="https://www.lcc.solutions">The Lifestyle™ Computer Company</a>
     and maintained by <a href="https://www.elijasorensen.com">Elija Sorensen</a>
   </p>
